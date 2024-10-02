@@ -92,17 +92,80 @@ h1{
   font-size: 3rem;
 }
 
-h2{
+header h2{
   font-size: 1.2rem;
   font-weight: normal;
 }
 
 main{
-  background-color: yellow;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3em;
+  gap: 2em;
+  flex-direction: column;
+}
+
+main h2{
+  font-size: 3rem;
+}
+
+#principaisProdutosContainer{
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.247);
+  border-radius: 6px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em;
+  padding: 1em;
+}
+
+.produto{
+  display: grid;
+  grid-template-rows: 300px 1fr;
+  gap: 1em;
+  border: 1px solid gray;
+  padding: 1em;
+  border-radius: 3px;
+}
+
+.produto:hover{
+  transform: scale(1.05);
+  transition: .3s;
+}
+
+.produtoImagem{
+  background-image: url("img/noImage.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.produtoConteudo{
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  gap: 1em;
+}
+
+.produtoConteudo p{
+  text-indent: 1.5rem;
 }
 
 footer{
-  background-color: blue;
+  background-color: gray;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p, footer a{
+  color: white;
+}
+
+footer a:visited{
+  color: lightgray;
 }
 
 @media screen and (width < 600px){
@@ -115,8 +178,8 @@ footer{
   }
 
   #tituloConteudo{
-    background-image: none;
-    background-color: white;
+    height: 100%;
+    border-radius: 0;
   }
 
   ul{
@@ -125,5 +188,27 @@ footer{
 
   #logo{
     left: 1em;
+  }
+
+  #principaisProdutosContainer{
+    width: 100%;
+    box-shadow: none;
+  }
+
+  #principaisProdutosContainer{
+    padding: 0;
+  }
+
+  main{
+    padding: 3em 0;
+  }
+
+  .produto:hover{
+    transform: none;
+  }
+
+  .produto{
+    border: 0;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .12);
   }
 }
