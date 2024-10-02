@@ -1,0 +1,113 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --corNavBar: rgb(55, 58, 255);
+}
+
+body{
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+nav{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: var(--corNavBar);
+  position: relative;
+}
+
+ul{
+  height: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2em;
+  gap: 2em;
+}
+
+li{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.1rem;
+}
+
+#logo{
+  position: absolute;
+  left: 2em;
+  top: 50%;
+  width: 45px;
+  height: 45px;
+  transform: translateY(-50%);
+  background-image: url("img/logo.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+#tituloContainer{
+  padding: 3em;
+}
+
+#tituloConteudo{
+  background-image: linear-gradient(45deg,rgba(0, 0, 0, 0.096), rgba(0, 0, 0, 0.043));
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  gap: 1.3em;
+  border-radius: 4px;
+}
+
+h1{
+  font-size: 3rem;
+}
+
+main{
+  background-color: yellow;
+}
+
+footer{
+  background-color: blue;
+}
+
+@media screen and (width < 600px){
+  html{
+    font-size: 1.2rem;
+  }
+
+  #tituloContainer{
+    padding: 0;
+  }
+
+  #tituloConteudo{
+    background-image: none;
+    background-color: white;
+  }
+
+  ul{
+    padding-right: 1em;
+  }
+
+  #logo{
+    left: 1em;
+  }
+}
