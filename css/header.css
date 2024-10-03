@@ -1,0 +1,116 @@
+:root {
+  --corNavBar: rgb(55, 58, 255);
+  --corBlocoTitulos: linear-gradient(45deg, rgba(0, 0, 0, 0.399), rgba(0, 0, 0, 0.316));
+}
+
+header {
+  flex-direction: column;
+  display: flex;
+  height: 100%;
+}
+
+nav {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4em;
+  background-color: var(--corNavBar);
+  position: relative;
+}
+
+ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 4em;
+  gap: 2em;
+}
+
+li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+li a:hover {
+  transform: scale(1.05);
+  transition: .3s;
+}
+
+#logo {
+  position: absolute;
+  left: 2em;
+  top: 50%;
+  width: 45px;
+  height: 45px;
+  transform: translateY(-50%);
+  background-image: url("../img/logo.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+header h2 {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+#tituloContainer {
+  background: linear-gradient(rgba(0, 0, 0, 0.247), rgba(0, 0, 0, 0.252)), url('img/noImage.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 3em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+#tituloConteudo {
+  background-image: var(--corBlocoTitulos);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  gap: 1.3em;
+  border-radius: 8px;
+  max-width: 1200px;
+
+}
+
+@media screen and (width < 600px) {
+
+
+  #tituloContainer {
+    padding: 0;
+  }
+
+  #tituloConteudo {
+    height: 100%;
+    border-radius: 0;
+  }
+
+  ul {
+    padding-right: 1em;
+  }
+
+  #logo {
+    left: 1em;
+  }
+
+}

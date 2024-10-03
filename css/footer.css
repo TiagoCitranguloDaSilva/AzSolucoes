@@ -1,0 +1,15 @@
+footer{
+    background-color: gray;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  footer p, footer a{
+    color: white;
+  }
+  
+  footer a:visited{
+    color: lightgray;
+  }
