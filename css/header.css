@@ -1,5 +1,5 @@
 :root {
-  --corNavBar: rgb(55, 58, 255);
+  --corNavBar: #373aff;
   --corBlocoTitulos: linear-gradient(45deg, rgba(0, 0, 0, 0.399), rgba(0, 0, 0, 0.316));
 }
 
@@ -8,6 +8,7 @@ header {
   flex-direction: column;
   display: flex;
   height: 100%;
+  width: 100%;
 }
 
 nav {
@@ -59,6 +60,7 @@ li a:hover {
   background-repeat: no-repeat;
   cursor: pointer;
   z-index: 1;
+  border-radius: 50%;
 }
 
 

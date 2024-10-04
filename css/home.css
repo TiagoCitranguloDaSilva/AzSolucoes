@@ -17,6 +17,10 @@ body{
   max-width: 1000px;
 }
 
+main h2 {
+  font-size: 3rem;
+}
+
 .produto {
   display: grid;
   grid-template-rows: 300px 1fr;
@@ -76,6 +80,8 @@ h1 {
   background-image: var(--corBlocoTitulos);
   text-align: center;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   padding: 2em;
   gap: 1.3em;
