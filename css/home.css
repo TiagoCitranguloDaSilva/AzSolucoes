@@ -1,3 +1,10 @@
+
+
+body{
+  display: grid;
+  grid-template-rows: 60px 1fr max-content;
+}
+
 #principaisProdutosContainer {
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.247);
   border-radius: 6px;
@@ -6,6 +13,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 2em;
   padding: 1em;
+  margin: 3em;
   max-width: 1000px;
 }
 
@@ -41,6 +49,41 @@
   text-indent: 1.5rem;
 }
 
+h1 {
+  font-size: 3rem;
+}
+
+#tituloConteudo h2 {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+#tituloContainer {
+  background: linear-gradient(rgba(0, 0, 0, 0.247), rgba(0, 0, 0, 0.252)), url('../img/noImage.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 3em;
+  height: calc(100svh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 100%;
+}
+
+#tituloConteudo {
+  background-image: var(--corBlocoTitulos);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  gap: 1.3em;
+  border-radius: 8px;
+  max-width: 1200px;
+
+}
+
 
 
 @media screen and (width < 600px) {
@@ -54,6 +97,14 @@
     padding: 0;
   }
 
+  #tituloContainer {
+    padding: 0;
+  }
+
+  #tituloConteudo {
+    height: 100%;
+    border-radius: 0;
+  }
 
 
   .produto:hover {

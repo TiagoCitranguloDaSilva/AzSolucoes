@@ -7,9 +7,6 @@
 body {
     min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
-    display: grid;
-    grid-template-rows: 100vh 1fr max-content;
-    grid-template-rows: 100svh 1fr max-content;
 }
 
 main {
@@ -17,7 +14,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3em;
+    /* padding: 3em; */
     gap: 2em;
     flex-direction: column;
 }
