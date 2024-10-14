@@ -2,7 +2,7 @@
 
 body{
   display: grid;
-  grid-template-rows: 60px 1fr max-content;
+  grid-template-rows: 60px 1fr max-content max-content;
 }
 
 #principaisProdutosContainer {
@@ -87,7 +87,42 @@ h1 {
   gap: 1.3em;
   border-radius: 8px;
   max-width: 1200px;
+}
 
+#autorizados{
+  background-color: darkgray ;
+  width: 100vw;
+  color: white;
+  padding: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+}
+
+#autorizados h3{
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+#autorizados ul{
+  list-style: none;
+  columns: 2;
+  font-size: 1.2rem;
+  margin: .5em;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+#autorizados li{
+  color: white;
+  font-weight: bold;
+}
+
+#autorizados li::first-letter{
+  text-transform: capitalize;
 }
 
 

@@ -20,7 +20,7 @@ nav {
   position: relative;
 }
 
-ul {
+header ul {
   height: 100%;
   list-style: none;
   display: flex;
@@ -29,7 +29,7 @@ ul {
   gap: 2em;
 }
 
-li {
+header li {
   height: 100%;
   display: flex;
   align-items: center;
@@ -38,12 +38,12 @@ li {
   font-size: 1.2rem;
 }
 
-li a {
+header li a {
   text-decoration: none;
   color: white;
 }
 
-li a:hover {
+header li a:hover {
   transform: scale(1.05);
   transition: .3s;
 }

@@ -124,6 +124,14 @@ main {
     gap: 1em;
 }
 
+.descricaoProduto{
+    width: 100%;
+}
+
+.descricaoProduto::first-letter{
+    text-transform: capitalize;
+}
+
 .descricaoCompleta{
     display: none;
 }
