@@ -12,9 +12,10 @@ main{
   height: 100%;
   grid-template-rows: max-content 1fr max-content;
   align-items: center;
-  justify-content: center;
+  justify-content: inherit;
   justify-items: center;
   padding-top: 2em;
+  width: 95%;
 }
 
 h1{
@@ -22,34 +23,68 @@ h1{
 }
 
 #info{
-  height: max-content;
-  width: max-content;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  min-height: 25em;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
   gap: 2em;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   padding: 2em;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, .18);
   border: 2px solid rgba(0, 0, 0, 0.39);
   border-radius: 5px;
 }
 
-#dados{
+#info h2{
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+}
+
+#dados{
+  display: grid;
+  align-items: center;
+  justify-content: center;
   gap: 1em;
+ grid-template-rows: 4em 1fr;
+}
+
+#dados div{
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
   flex-direction: column;
+  gap: 2em;
+  height: 100%;
+  padding: 1em;
+  font-size: 1.1rem;
+}
+
+#localizacao{
+  display: grid;
+  grid-template-rows: 4em 1fr;
+}
+
+iframe{
+  width: 100%;
+  height: 100%;
 }
 
 #dados a{
   color: rgb(102, 102, 102);
 }
 
-#sobre{
-  width: 100%;
-  padding: 1em 2em;
-  background-color: lightgray;
-  /* bottom: 0; */
+
+@media screen and (width <= 700px) {
+  #info{
+    display: flex;
+    flex-direction: column;
+  }
+
+  iframe{
+    min-height: 20em;
+  }
 }
