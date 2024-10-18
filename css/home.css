@@ -80,7 +80,7 @@ h1 {
 }
 
 #tituloContainer {
-  background: linear-gradient(rgba(0, 0, 0, 0.247), rgba(0, 0, 0, 0.252)), url('../img/noImage.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.247), rgba(0, 0, 0, 0.252)), url('../img/banner.jpeg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
