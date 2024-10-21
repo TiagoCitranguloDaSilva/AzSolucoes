@@ -39,12 +39,6 @@ main h2 {
   padding: 1em;
   border-radius: 3px;
   max-width: 400px;
-  cursor: pointer;
-}
-
-.card:hover {
-  transform: scale(1.05);
-  transition: .3s;
 }
 
 .imagem {
@@ -194,7 +188,21 @@ h1 {
   background-image: url('../img/iconeWhatsapp.png');
 }
 
+.saberMais {
+  text-align: center;
+  margin: auto;
+  background-color: #373aff;
+  text-indent: initial !important;
+  padding: .8em;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
 
+.saberMais:hover {
+  transform: scale(1.05);
+  transition: .3s;
+}
 
 @media screen and (width < 600px) {
 

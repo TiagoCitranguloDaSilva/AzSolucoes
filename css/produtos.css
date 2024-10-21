@@ -3,6 +3,10 @@
     --corCategoriasBloco: #4c4fff;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     display: grid;
     grid-template-rows: 60px 1fr max-content;
@@ -135,6 +139,7 @@ main {
 .descricaoCompleta{
     display: none;
 }
+
 .produto h4{
     font-size: 1.2rem;
     text-align: center;
