@@ -1,4 +1,7 @@
 
+:root{
+    --corBlocoTitulos: linear-gradient(45deg, rgba(0, 0, 0, 0.399), rgba(0, 0, 0, 0.316));
+}
 
 body{
   display: grid;
@@ -84,7 +87,7 @@ h1 {
 #tituloContainer {
   background: linear-gradient(rgba(0, 0, 0, 0.247), rgba(0, 0, 0, 0.252)), url('../img/banner.jpeg');
   background-size: cover;
-  background-position: center center;
+  background-position: center left;
   background-repeat: no-repeat;
   padding: 3em;
   height: calc(100svh - 60px);
