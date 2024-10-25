@@ -14,10 +14,20 @@
   <header>
     <a  href="#" target="_self" id="logo"></a>
     <nav>
-      <ul>
+      <ul id="navPadrao">
+        <li><a href="./#autorizados" target="_self">Parceiras</a></li>
         <li><a href="html/produtos.html" target="_self">Produtos</a></li>
         <li><a href="html/contato.html" target="_self">Contato</a></li>
       </ul>
+      <button id="menuHamburguer" onclick="showMenu()"></button>
+      <div id="menu">
+        <div id="containerClose"><button id="close" onclick="closeMenu()">X</button></div>
+        <ul id="navMenu">
+          <li><a href="./#autorizados" target="_self">Parceiras</a></li>
+          <li><a href="html/produtos.html" target="_self">Produtos</a></li>
+          <li><a href="html/contato.html" target="_self">Contato</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
   <main>
@@ -79,5 +89,6 @@
   <footer>
     <p>Feito por <a href="https://www.github.com/TiagoCitranguloDaSilva" target="_blank">Tiago Citrangulo da Silva</a></p>
   </footer>
+  <script src="./js/menuHamburguer.js"></script>
 </body>
 </html>

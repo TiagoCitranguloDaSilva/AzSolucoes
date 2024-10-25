@@ -14,12 +14,22 @@
 
 <body>
   <header>
+    <a  href="../" target="_self" id="logo"></a>
     <nav>
-      <a href="../" target="_self" id="logo"></a>
-      <ul>
+      <ul id="navPadrao">
+        <!-- <li><a href="./#autorizados" target="_self">Parceiras</a></li> -->
         <li><a href="../" target="_self">Home</a></li>
-        <li><a href="produtos.html" target="_self">Produtos</a></li>
+        <li><a href="./produtos.html" target="_self">Produtos</a></li>
       </ul>
+      <button id="menuHamburguer" onclick="showMenu()"></button>
+      <div id="menu">
+        <div id="containerClose"><button id="close" onclick="closeMenu()">X</button></div>
+        <ul id="navMenu">
+          <!-- <li><a href="./#autorizados" target="_self">Parceiras</a></li> -->
+          <li><a href="../" target="_self">Home</a></li>
+          <li><a href="./produtos.html" target="_self">Produtos</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
   <main>
@@ -43,6 +53,7 @@
     <p>Feito por <a href="https://www.github.com/TiagoCitranguloDaSilva" target="_blank">Tiago Citrangulo da Silva</a>
     </p>
   </footer>
+  <script src="../js/menuHamburguer.js"></script>
 </body>
 
 </html>
