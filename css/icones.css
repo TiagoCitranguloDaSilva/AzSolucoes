@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "icones";
+  src: url('../fonts/fa-solid-900.ttf');
+  font-weight: 900;
+}
+
+
+.icons::before {
+  display: inline-block;
+  font-family: "icones";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.icons#menuHamburguer::before{
+  content: "\f0c9";
+}
