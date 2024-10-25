@@ -5,7 +5,7 @@
 }
 
 
-.icons::before {
+.icones::before {
   display: inline-block;
   font-family: "icones";
   font-weight: 900;
@@ -16,6 +16,10 @@
 }
 
 
-.icons#menuHamburguer::before{
+.icones#menuHamburguer::before{
   content: "\f0c9";
+}
+
+.icones#close::before{
+  content: "\58";
 }
