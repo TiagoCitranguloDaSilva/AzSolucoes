@@ -78,8 +78,8 @@ header li a:hover {
   background-size: contain;
   border: none;
   border-radius: 10px;
-  width: 4em;
-  height: 4em;
+  width: 3em;
+  height: 3em;
   color: white;
   cursor: pointer;
 }
@@ -153,9 +153,9 @@ header li a:hover {
 
 @media screen and (width < 600px) {
 
-  body{
+  /* body{
     grid-template-rows: 80px 1fr max-content max-content !important;
-  }
+  } */
 
   nav ul#navPadrao{
     display: none;
@@ -167,8 +167,6 @@ header li a:hover {
 
   #logo {
     left: 1em;
-    width: 55px;
-    height: 55px;
   }
 
 }
