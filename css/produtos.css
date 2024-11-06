@@ -101,7 +101,7 @@ main {
 
 .produto {
     display: grid;
-    grid-template-rows: 100px 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 1em;
     border: 1px solid gray;
     padding: 1em;
@@ -115,10 +115,14 @@ main {
 }
 
 .produtoImagem {
-    background-image: url("../img/noImage.jpg");
+    /* background-image: url("../img/noImage.jpg");
     background-position: center center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    height: 12em;
+    max-width: 100%;
+    /* object-fit: cover; */
+    margin: auto;
 }
 
 .produtoConteudo {
@@ -126,6 +130,7 @@ main {
     flex-direction: column;
     text-align: justify;
     gap: 1em;
+    text-indent: 2rem;
 }
 
 .descricaoProduto{
