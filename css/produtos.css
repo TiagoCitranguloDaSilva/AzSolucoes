@@ -1,6 +1,7 @@
 :root {
-    --corCategoriaBar: #373aff;
-    --corCategoriasBloco: #4c4fff;
+
+    --corCategoriaBar: #183c8f;
+    --corCategoriasBloco: #2962e7;
 }
 
 html{
@@ -59,6 +60,7 @@ main {
     cursor: pointer;
     color: white;
     text-decoration: none;
+    border-radius: 10px;
 }
 
 .categoria:hover {

@@ -1,6 +1,7 @@
 
 :root{
-    --corBlocoTitulos: linear-gradient(45deg, rgba(0, 0, 0, 0.399), rgba(0, 0, 0, 0.316));
+  --corBlocoTitulos: linear-gradient(45deg, rgba(0, 0, 0, 0.399), rgba(0, 0, 0, 0.316));
+  --corBotaoCard: #183c8f;
 }
 
 body{
@@ -201,7 +202,7 @@ h1 {
 .saberMais {
   text-align: center;
   margin: auto;
-  background-color: #373aff;
+  background-color: var(--corBotaoCard);
   text-indent: initial !important;
   padding: .8em;
   color: white;
